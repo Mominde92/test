@@ -4,7 +4,7 @@ import { MapPin, Search } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="overflow-hidden border-b border-[#ece4d8] bg-[#fffaf1]">
-      <div className="relative mx-auto min-h-[auto] max-w-[1450px] px-5 py-10 md:px-8 md:py-12 xl:flex xl:min-h-[640px] xl:items-center xl:px-0 xl:py-8">
+      <div className="relative mx-auto min-h-[auto] max-w-[1450px] px-4 py-8 md:px-8 md:py-12 xl:flex xl:min-h-[640px] xl:items-center xl:px-0 xl:py-8">
         <Image
           src="/images/Group 1171284377.png"
           alt="Premium lipstick product"
@@ -15,9 +15,9 @@ export function HeroSection() {
         />
 
         <div className="relative z-10 mx-auto max-w-[430px] xl:mx-0 xl:ml-[clamp(95px,11.7vw,188px)] xl:-translate-y-4">
-          <div className="mb-3 flex h-[38px] w-full max-w-[405px] items-center rounded-md bg-[#fff0e2] px-4 text-ink">
-            <div className="flex min-w-0 flex-1 items-center gap-3">
-              <Search className="h-[22px] w-[22px] text-ink" strokeWidth={1.8} />
+          <div className="mb-3 flex h-9 w-full max-w-[405px] items-center rounded-md bg-[#fff0e2] px-3 text-ink sm:h-[38px] sm:px-4">
+            <div className="flex min-w-0 flex-1 items-center gap-2 sm:gap-3">
+              <Search className="h-5 w-5 text-ink sm:h-[22px] sm:w-[22px]" strokeWidth={1.8} />
               <input
                 type="search"
                 className="w-full bg-transparent text-sm font-medium text-ink outline-none placeholder:text-stone-400"
@@ -30,34 +30,34 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="mb-2 h-6 w-[2px] bg-peach" />
+          <div className="mb-2 h-5 w-[2px] bg-peach sm:h-6" />
 
-          <h1 className="font-heading text-[44px] font-normal uppercase leading-[1.08] tracking-[0.015em] text-ink sm:text-[58px] xl:text-[clamp(56px,4vw,64px)]">
+          <h1 className="font-heading text-[36px] font-normal uppercase leading-[1.08] tracking-[0.015em] text-ink sm:text-[58px] xl:text-[clamp(56px,4vw,64px)]">
             Discover Your
             <span className="block">Perfect Shade</span>
           </h1>
 
-          <p className="mt-5 max-w-[420px] text-[18px] font-medium leading-[1.55] text-[#222] sm:text-[21px]">
+          <p className="mt-4 max-w-[420px] text-[15px] font-medium leading-[1.55] text-[#222] sm:mt-5 sm:text-[21px]">
             Discover and compare the prices for makeup, skincare and beauty products from
             trusted store near you.
           </p>
 
           <button
             type="button"
-            className="mt-6 h-[70px] w-full max-w-[368px] rounded-md bg-magenta text-[21px] font-bold text-white shadow-card hover:-translate-y-0.5 hover:bg-magenta-dark hover:shadow-soft"
+            className="mt-5 h-12 w-full max-w-[368px] rounded-md bg-magenta text-base font-bold text-white shadow-card hover:-translate-y-0.5 hover:bg-magenta-dark hover:shadow-soft sm:mt-6 sm:h-[70px] sm:text-[21px]"
           >
             Compare Now
           </button>
         </div>
 
-        <div className="relative mx-auto mt-8 flex min-h-[330px] w-full min-w-0 items-center justify-center sm:min-h-[430px] xl:hidden">
-          <div className="relative h-[330px] w-full min-w-0 sm:h-[470px] xl:h-[650px]">
+        <div className="relative mx-auto mt-5 flex min-h-[280px] w-full min-w-0 items-center justify-center overflow-hidden rounded-2xl bg-[#fff7ed] sm:mt-8 sm:min-h-[430px] xl:hidden">
+          <div className="relative h-[280px] w-full min-w-0 sm:h-[470px] xl:h-[650px]">
             <Image
               src="/images/Group 1171284377.png"
               alt="Premium lipstick product"
               fill
               priority
-              className="object-contain object-center"
+              className="object-cover object-[63%_center] sm:object-contain sm:object-center"
               sizes="(max-width: 1280px) 100vw, 1000px"
             />
           </div>

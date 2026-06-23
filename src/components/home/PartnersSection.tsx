@@ -8,7 +8,7 @@ export function PartnersSection() {
           src="/images/partners/brand-strip.png"
           alt="Partner brands: amazon, shopify, attentive, zapier, Layers, Catalog"
           fill
-          className="object-cover object-center"
+          className="object-contain object-center"
           sizes="100vw"
         />
       </div>

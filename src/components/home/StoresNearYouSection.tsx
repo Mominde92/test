@@ -43,49 +43,49 @@ export function StoresNearYouSection() {
                 Nearest Stores
               </span>
             </div>
-            <h2 className="w-fit border-b-4 border-[#108ee9] font-section text-[36px] font-normal leading-tight text-ink">
+            <h2 className="w-fit border-b-4 border-[#108ee9] font-section text-[32px] font-normal leading-tight text-ink sm:text-[36px]">
               Stores near You
             </h2>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             <button
               type="button"
-              className="flex h-14 w-14 items-center justify-center rounded-full bg-[#f5f5f5] text-ink hover:bg-magenta hover:text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f5f5f5] text-ink hover:bg-magenta hover:text-white sm:h-14 sm:w-14"
               aria-label="Previous stores"
             >
-              <ArrowLeft className="h-7 w-7" />
+              <ArrowLeft className="h-5 w-5 sm:h-7 sm:w-7" />
             </button>
             <button
               type="button"
-              className="flex h-14 w-14 items-center justify-center rounded-full bg-[#f5f5f5] text-ink hover:bg-magenta hover:text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f5f5f5] text-ink hover:bg-magenta hover:text-white sm:h-14 sm:w-14"
               aria-label="Next stores"
             >
-              <ArrowRight className="h-7 w-7" />
+              <ArrowRight className="h-5 w-5 sm:h-7 sm:w-7" />
             </button>
           </div>
         </div>
 
         <div className="mb-6 grid gap-6 lg:grid-cols-[1.34fr_0.74fr]">
-          <div className="flex h-14 items-center gap-3 rounded-full bg-white px-5 shadow-[0_12px_28px_rgba(17,17,17,0.05)]">
-            <MapPin className="h-6 w-6 fill-[#bf3f63] text-[#bf3f63]" />
-            <p className="truncate text-base font-semibold text-ink">
+          <div className="flex min-h-12 items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-[0_12px_28px_rgba(17,17,17,0.05)] sm:h-14 sm:gap-3 sm:rounded-full sm:px-5 sm:py-0">
+            <MapPin className="h-5 w-5 shrink-0 fill-[#bf3f63] text-[#bf3f63] sm:h-6 sm:w-6" />
+            <p className="line-clamp-2 text-sm font-semibold text-ink sm:truncate sm:text-base">
               Beauty Glow Store Al Aziziyah street 45A 123 Shop Number
             </p>
           </div>
 
-          <div className="flex h-14 min-w-0 items-center rounded-full bg-white px-4 shadow-[0_12px_28px_rgba(17,17,17,0.05)]">
-            <label className="min-w-0 flex-1 px-4 text-sm font-medium text-[#7a756e]">
+          <div className="flex min-w-0 flex-col gap-3 rounded-2xl bg-white px-4 py-3 shadow-[0_12px_28px_rgba(17,17,17,0.05)] sm:h-14 sm:flex-row sm:items-center sm:rounded-full sm:py-0">
+            <label className="min-w-0 flex-1 text-sm font-medium text-[#7a756e] sm:px-4">
               <input
                 type="text"
                 defaultValue="Al Aziziyah Riyadh"
-                className="w-full bg-transparent outline-none"
+                className="h-9 w-full rounded-full bg-[#fffaf1] px-3 outline-none sm:h-auto sm:rounded-none sm:bg-transparent sm:px-0"
                 aria-label="City"
               />
             </label>
             <button
               type="button"
-              className="flex h-8 shrink-0 items-center gap-3 border-l border-stone-200 px-5 text-base font-medium text-[#6d6963] hover:text-magenta"
+              className="flex h-9 shrink-0 items-center justify-between gap-3 rounded-full bg-[#fffaf1] px-3 text-sm font-medium text-[#6d6963] hover:text-magenta sm:h-8 sm:border-l sm:border-stone-200 sm:bg-transparent sm:px-5 sm:text-base"
               aria-label="Select distance"
             >
               Distance
@@ -93,7 +93,7 @@ export function StoresNearYouSection() {
             </button>
             <button
               type="button"
-              className="ml-2 inline-flex h-11 shrink-0 items-center justify-center rounded-full bg-ink px-6 text-base font-semibold text-white shadow-sm hover:-translate-y-0.5 hover:bg-magenta"
+              className="inline-flex h-10 shrink-0 items-center justify-center rounded-full bg-ink px-6 text-sm font-semibold text-white shadow-sm hover:-translate-y-0.5 hover:bg-magenta sm:ml-2 sm:h-11 sm:text-base"
             >
               Search
             </button>
@@ -101,7 +101,7 @@ export function StoresNearYouSection() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[1.34fr_0.74fr]">
-          <div className="relative min-h-[570px] overflow-hidden rounded-[1.25rem] bg-[#eef1ef] shadow-[0_12px_32px_rgba(17,17,17,0.08)]">
+          <div className="relative min-h-[430px] overflow-hidden rounded-[1.25rem] bg-[#eef1ef] shadow-[0_12px_32px_rgba(17,17,17,0.08)] sm:min-h-[570px]">
             <div className="absolute inset-0 opacity-80">
               <div className="absolute left-0 top-[12%] h-8 w-full rotate-[-12deg] bg-white/70" />
               <div className="absolute left-0 top-[32%] h-8 w-full rotate-[10deg] bg-white/70" />
@@ -121,12 +121,12 @@ export function StoresNearYouSection() {
               </span>
             ))}
 
-            <div className="absolute left-[10%] top-[18%] w-[min(340px,80%)] rounded-[1.15rem] bg-white p-5 shadow-soft">
-              <h3 className="text-xl font-bold text-ink">Beauty Glow Store</h3>
-              <p className="mt-1 text-sm text-muted">
+            <div className="absolute left-4 top-16 w-[min(310px,calc(100%-32px))] rounded-[1.15rem] bg-white p-4 shadow-soft sm:left-[10%] sm:top-[18%] sm:w-[min(340px,80%)] sm:p-5">
+              <h3 className="text-lg font-bold text-ink sm:text-xl">Beauty Glow Store</h3>
+              <p className="mt-1 text-xs text-muted sm:text-sm">
                 Al Aziziyah street 45A 123 Shop Number
               </p>
-              <div className="relative mt-3 h-36 overflow-hidden rounded-md bg-cream">
+              <div className="relative mt-3 h-28 overflow-hidden rounded-md bg-cream sm:h-36">
                 <Image
                   src="/images/stores/glam-bar.png"
                   alt="Beauty Glow Store"
@@ -134,14 +134,14 @@ export function StoresNearYouSection() {
                   className="object-cover"
                 />
               </div>
-              <div className="mt-4 flex items-center justify-between gap-3">
-                <span className="inline-flex items-center gap-2 text-base font-bold text-ink">
+              <div className="mt-3 flex items-center justify-between gap-2 sm:mt-4 sm:gap-3">
+                <span className="inline-flex items-center gap-1.5 text-sm font-bold text-ink sm:gap-2 sm:text-base">
                   <HeartHandshake className="h-5 w-5" />
                   3.5KM
                 </span>
                 <a
                   href="#directions"
-                  className="inline-flex items-center gap-2 rounded-full border-2 border-ink px-4 py-2 text-sm font-bold text-ink hover:border-magenta hover:text-magenta"
+                  className="inline-flex items-center gap-1.5 rounded-full border-2 border-ink px-3 py-1.5 text-xs font-bold text-ink hover:border-magenta hover:text-magenta sm:gap-2 sm:px-4 sm:py-2 sm:text-sm"
                 >
                   Get Directions
                   <ArrowRight className="h-5 w-5" />
@@ -156,7 +156,7 @@ export function StoresNearYouSection() {
                 key={store.name}
                 className="rounded-[1.1rem] bg-[#f8f8f8] px-4 py-4 transition hover:-translate-y-0.5 hover:shadow-card"
               >
-                <div className="grid grid-cols-[1fr_auto_auto] items-center gap-3">
+                <div className="grid grid-cols-[1fr_auto] items-center gap-3 sm:grid-cols-[1fr_auto_auto]">
                   <div className="min-w-0">
                     <h3 className="text-[18px] font-bold leading-tight text-ink">
                       {store.name}
@@ -170,7 +170,7 @@ export function StoresNearYouSection() {
                     <HeartHandshake className="mx-auto mb-0.5 h-5 w-5" />
                     {store.distance}
                   </div>
-                  <div className="text-center text-xs text-ink">
+                  <div className="hidden text-center text-xs text-ink sm:block">
                     <CornerUpRight className="mx-auto mb-0.5 h-5 w-5" />
                     Get There
                   </div>

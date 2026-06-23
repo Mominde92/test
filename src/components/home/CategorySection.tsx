@@ -12,18 +12,18 @@ export function CategorySection() {
               Categories
             </span>
           </div>
-          <h2 className="font-section text-[36px] font-normal leading-tight text-ink">
+          <h2 className="font-section text-[32px] font-normal leading-tight text-ink sm:text-[36px]">
             Browse By Category
           </h2>
         </div>
 
-        <div className="-mx-5 overflow-x-auto px-5 pb-3 md:mx-0 md:px-0">
-          <div className="flex min-w-max gap-5 md:min-w-0 md:justify-between md:gap-6">
+        <div className="-mx-4 overflow-x-auto px-4 pb-3 md:mx-0 md:px-0">
+          <div className="flex min-w-max gap-4 md:min-w-0 md:justify-between md:gap-6">
             {categories.map((category) => (
               <a
                 key={category.id}
                 href={`#${category.slug}`}
-                className="group w-[132px] shrink-0 text-center sm:w-[150px] md:w-[156px]"
+                className="group w-[118px] shrink-0 text-center sm:w-[150px] md:w-[156px]"
               >
                 <div className="relative aspect-[1.05/1] overflow-hidden rounded-[1.35rem] bg-white shadow-card transition duration-200 group-hover:-translate-y-1 group-hover:scale-[1.03] group-hover:shadow-soft">
                   {/* Replace category placeholder paths with final screenshot-matched category assets. */}
@@ -36,7 +36,7 @@ export function CategorySection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                 </div>
-                <p className="mt-4 text-sm font-semibold text-ink transition group-hover:text-magenta sm:text-base">
+                <p className="mt-3 text-sm font-semibold text-ink transition group-hover:text-magenta sm:mt-4 sm:text-base">
                   {category.name}
                 </p>
               </a>

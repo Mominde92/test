@@ -33,39 +33,39 @@ export function FeaturedProductsSection() {
                 Trending
               </span>
             </div>
-            <h2 className="font-section text-[36px] font-normal leading-tight text-ink">
+            <h2 className="font-section text-[32px] font-normal leading-tight text-ink sm:text-[36px]">
               Featured Products
             </h2>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             <button
               type="button"
-              className="flex h-14 w-14 items-center justify-center rounded-full bg-[#f5f5f5] text-ink hover:bg-magenta hover:text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f5f5f5] text-ink hover:bg-magenta hover:text-white sm:h-14 sm:w-14"
               aria-label="Previous featured products"
               onClick={() => scrollSlider("left")}
             >
-              <ArrowLeft className="h-7 w-7" />
+              <ArrowLeft className="h-5 w-5 sm:h-7 sm:w-7" />
             </button>
             <button
               type="button"
-              className="flex h-14 w-14 items-center justify-center rounded-full bg-[#f5f5f5] text-ink hover:bg-magenta hover:text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f5f5f5] text-ink hover:bg-magenta hover:text-white sm:h-14 sm:w-14"
               aria-label="Next featured products"
               onClick={() => scrollSlider("right")}
             >
-              <ArrowRight className="h-7 w-7" />
+              <ArrowRight className="h-5 w-5 sm:h-7 sm:w-7" />
             </button>
           </div>
         </div>
 
         <div
           ref={sliderRef}
-          className="-mx-5 flex snap-x snap-mandatory gap-7 overflow-x-auto px-5 pb-4 scroll-smooth [scrollbar-width:none] md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden"
+          className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 scroll-smooth [scrollbar-width:none] sm:gap-7 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden"
         >
           {products.map((product, index) => (
             <div
               key={product.id}
-              className="w-[290px] shrink-0 snap-start sm:w-[330px] lg:w-[calc((100%_-_84px)/4)]"
+              className="w-[82vw] max-w-[310px] shrink-0 snap-start sm:w-[330px] sm:max-w-none lg:w-[calc((100%_-_84px)/4)]"
             >
               <ProductCard product={product} showCompareCta={index === 1 || index === 6} />
             </div>
