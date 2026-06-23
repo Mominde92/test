@@ -9,7 +9,7 @@ const footerLinks = {
 export function Footer() {
   return (
     <footer className="bg-[#fff1e4] font-footer">
-      <div className="mx-auto grid max-w-[1600px] gap-10 px-5 py-20 md:grid-cols-2 md:px-8 lg:grid-cols-[1.35fr_1fr_1fr_1.35fr_1fr] lg:py-24">
+      <div className="mx-auto grid max-w-[1600px] gap-8 px-5 py-12 md:grid-cols-2 md:px-8 lg:grid-cols-[1.35fr_1fr_1fr_1.35fr_1fr] lg:py-14">
         <div>
           <a href="/" className="block w-40" aria-label="Hoor home">
             <Image
@@ -25,7 +25,7 @@ export function Footer() {
         {Object.entries(footerLinks).map(([title, links]) => (
           <div key={title}>
             <h3 className="text-[16px] font-semibold leading-none text-ink">{title}</h3>
-            <ul className="mt-5 space-y-5">
+            <ul className="mt-4 space-y-4">
               {links.map((link) => (
                 <li key={link}>
                   <a href="#" className="text-[13px] font-normal leading-none text-stone-600 hover:text-magenta">
@@ -39,7 +39,7 @@ export function Footer() {
 
         <div>
           <h3 className="text-[16px] font-semibold leading-none text-ink">Share</h3>
-          <div className="mt-5 flex items-center gap-6">
+          <div className="mt-4 flex items-center gap-5">
             <a
               href="#"
               className="text-ink hover:text-magenta"
@@ -62,14 +62,14 @@ export function Footer() {
               <Linkedin className="h-7 w-7" fill="currentColor" />
             </a>
           </div>
-          <p className="mt-5 max-w-[300px] text-[13px] font-normal leading-none text-ink">
+          <p className="mt-4 max-w-[300px] text-[13px] font-normal leading-none text-ink">
             Find Nearest Store Around You
           </p>
         </div>
 
         <div>
           <h3 className="text-[16px] font-semibold leading-none text-ink">Download Now</h3>
-          <div className="mt-5 flex flex-col gap-3">
+          <div className="mt-4 flex flex-col gap-2.5">
             <a
               href="#"
               className="block w-[174px] transition hover:-translate-y-0.5 hover:opacity-90"

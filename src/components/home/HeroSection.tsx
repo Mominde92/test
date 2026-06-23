@@ -4,7 +4,7 @@ import { MapPin, Search } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="overflow-hidden border-b border-[#ece4d8] bg-[#fffaf1]">
-      <div className="relative mx-auto min-h-[auto] max-w-[1600px] px-5 py-14 md:px-8 md:py-16 xl:flex xl:min-h-[720px] xl:items-center xl:px-0 xl:py-12">
+      <div className="relative mx-auto min-h-[auto] max-w-[1600px] px-5 py-10 md:px-8 md:py-12 xl:flex xl:min-h-[640px] xl:items-center xl:px-0 xl:py-8">
         <Image
           src="/images/Group 1171284377.png"
           alt="Premium lipstick product"

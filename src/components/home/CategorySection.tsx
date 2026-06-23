@@ -3,9 +3,9 @@ import { categories } from "@/constants/categories";
 
 export function CategorySection() {
   return (
-    <section className="bg-cream-soft px-5 py-16 md:px-8 lg:py-20">
+    <section className="bg-cream-soft px-5 py-10 md:px-8 lg:py-12">
       <div className="mx-auto max-w-[1600px]">
-        <div className="mb-12 flex flex-col items-start gap-4 sm:mb-14">
+        <div className="mb-8 flex flex-col items-start gap-3 sm:mb-9">
           <div className="inline-flex items-center gap-2">
             <span className="inline-flex h-5 w-5 rounded bg-peach" />
             <span className="font-label text-xl font-semibold text-peach">

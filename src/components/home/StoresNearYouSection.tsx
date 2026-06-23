@@ -33,11 +33,11 @@ const mapPins = [
 
 export function StoresNearYouSection() {
   return (
-    <section className="bg-cream-soft px-5 py-16 md:px-8 lg:py-20">
+    <section className="bg-cream-soft px-5 py-10 md:px-8 lg:py-12">
       <div className="mx-auto max-w-[1600px]">
-        <div className="mb-9 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+        <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <div className="mb-4 inline-flex items-center gap-2">
+            <div className="mb-3 inline-flex items-center gap-2">
               <span className="inline-flex h-5 w-5 rounded bg-peach" />
               <span className="font-label text-xl font-semibold text-peach">
                 Nearest Stores
@@ -66,7 +66,7 @@ export function StoresNearYouSection() {
           </div>
         </div>
 
-        <div className="mb-8 grid gap-8 lg:grid-cols-[1.34fr_0.74fr]">
+        <div className="mb-6 grid gap-6 lg:grid-cols-[1.34fr_0.74fr]">
           <div className="flex h-14 items-center gap-3 rounded-full bg-white px-5 shadow-[0_12px_28px_rgba(17,17,17,0.05)]">
             <MapPin className="h-6 w-6 fill-[#bf3f63] text-[#bf3f63]" />
             <p className="truncate text-base font-semibold text-ink">
@@ -100,7 +100,7 @@ export function StoresNearYouSection() {
           </div>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[1.34fr_0.74fr]">
+        <div className="grid gap-6 lg:grid-cols-[1.34fr_0.74fr]">
           <div className="relative min-h-[570px] overflow-hidden rounded-[1.25rem] bg-[#eef1ef] shadow-[0_12px_32px_rgba(17,17,17,0.08)]">
             <div className="absolute inset-0 opacity-80">
               <div className="absolute left-0 top-[12%] h-8 w-full rotate-[-12deg] bg-white/70" />
@@ -128,7 +128,7 @@ export function StoresNearYouSection() {
               </p>
               <div className="relative mt-3 h-36 overflow-hidden rounded-md bg-cream">
                 <Image
-                  src="/images/stores/store-placeholder.svg"
+                  src="/images/stores/glam-bar.png"
                   alt="Beauty Glow Store"
                   fill
                   className="object-cover"
@@ -150,28 +150,28 @@ export function StoresNearYouSection() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-3">
             {nearbyStores.map((store) => (
               <article
                 key={store.name}
-                className="rounded-[1.1rem] bg-[#f8f8f8] px-5 py-6 transition hover:-translate-y-0.5 hover:shadow-card"
+                className="rounded-[1.1rem] bg-[#f8f8f8] px-4 py-4 transition hover:-translate-y-0.5 hover:shadow-card"
               >
-                <div className="grid grid-cols-[1fr_auto_auto] items-center gap-4">
+                <div className="grid grid-cols-[1fr_auto_auto] items-center gap-3">
                   <div className="min-w-0">
-                    <h3 className="text-[22px] font-bold leading-tight text-ink">
+                    <h3 className="text-[18px] font-bold leading-tight text-ink">
                       {store.name}
                     </h3>
-                    <p className="mt-2 flex items-center gap-1 text-sm text-muted">
+                    <p className="mt-1 flex items-center gap-1 text-xs text-muted">
                       <MapPin className="h-4 w-4" />
                       {store.address}
                     </p>
                   </div>
-                  <div className="text-center text-sm text-ink">
-                    <HeartHandshake className="mx-auto mb-1 h-6 w-6" />
+                  <div className="text-center text-xs text-ink">
+                    <HeartHandshake className="mx-auto mb-0.5 h-5 w-5" />
                     {store.distance}
                   </div>
-                  <div className="text-center text-sm text-ink">
-                    <CornerUpRight className="mx-auto mb-1 h-6 w-6" />
+                  <div className="text-center text-xs text-ink">
+                    <CornerUpRight className="mx-auto mb-0.5 h-5 w-5" />
                     Get There
                   </div>
                 </div>

@@ -44,14 +44,14 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 isolate z-[2147483647] border-b border-[#d8d1c8] bg-[#fffaf1] shadow-[0_1px_0_rgba(17,17,17,0.04)]">
-      <nav className="hidden h-[112px] w-full items-stretch xl:flex">
+      <nav className="hidden h-[82px] w-full items-stretch xl:flex">
         <div className="flex w-[clamp(155px,12vw,198px)] shrink-0 items-center justify-center border-r border-[#d8d1c8]">
           <button
             type="button"
-            className="inline-flex items-center gap-2 text-[clamp(17px,1.25vw,21px)] font-semibold text-ink hover:text-magenta"
+            className="inline-flex items-center gap-1.5 text-[clamp(15px,1vw,18px)] font-semibold text-ink hover:text-magenta"
             aria-label="Change language"
           >
-            <span className="text-[clamp(24px,2vw,32px)] leading-none" aria-hidden="true">
+            <span className="text-[clamp(20px,1.6vw,26px)] leading-none" aria-hidden="true">
               🇺🇸
             </span>
             <span>ENG</span>
@@ -59,8 +59,8 @@ export function Navbar() {
           </button>
         </div>
 
-        <div className="grid min-w-0 flex-1 grid-cols-[minmax(0,1fr)_clamp(170px,16vw,270px)_minmax(0,1fr)] items-center px-[clamp(18px,2.5vw,40px)]">
-          <div className="flex items-center justify-center gap-[clamp(24px,4vw,80px)]">
+        <div className="grid min-w-0 flex-1 grid-cols-[minmax(0,1fr)_clamp(135px,13vw,190px)_minmax(0,1fr)] items-center px-[clamp(14px,2vw,32px)]">
+          <div className="flex items-center justify-center gap-[clamp(18px,3.2vw,58px)]">
             {navLinks.slice(0, 2).map((link) => {
               const Icon = link.icon;
 
@@ -68,9 +68,9 @@ export function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="inline-flex items-center gap-2 whitespace-nowrap text-[clamp(16px,1.2vw,20px)] font-medium text-[#7b776f] hover:text-magenta"
+                  className="inline-flex items-center gap-1.5 whitespace-nowrap text-[clamp(14px,1vw,17px)] font-medium text-[#7b776f] hover:text-magenta"
                 >
-                  <Icon className="h-5 w-5 stroke-[1.8]" />
+                  <Icon className="h-4 w-4 stroke-[1.8]" />
                   {link.label}
                 </a>
               );
@@ -79,7 +79,7 @@ export function Navbar() {
 
           <a
             href="/"
-            className="mx-auto flex h-[86px] w-[clamp(148px,11vw,184px)] items-center justify-center transition hover:scale-[1.03]"
+            className="mx-auto flex h-[66px] w-[clamp(118px,9vw,150px)] items-center justify-center transition hover:scale-[1.03]"
             aria-label="Hoor home"
           >
             <Image
@@ -92,7 +92,7 @@ export function Navbar() {
             />
           </a>
 
-          <div className="flex items-center justify-center gap-[clamp(24px,4vw,80px)]">
+          <div className="flex items-center justify-center gap-[clamp(18px,3.2vw,58px)]">
             {navLinks.slice(2).map((link) => {
               const Icon = link.icon;
 
@@ -100,9 +100,9 @@ export function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="inline-flex items-center gap-2 whitespace-nowrap text-[clamp(16px,1.2vw,20px)] font-medium text-[#7b776f] hover:text-magenta"
+                  className="inline-flex items-center gap-1.5 whitespace-nowrap text-[clamp(14px,1vw,17px)] font-medium text-[#7b776f] hover:text-magenta"
                 >
-                  <Icon className="h-5 w-5 stroke-[1.8]" />
+                  <Icon className="h-4 w-4 stroke-[1.8]" />
                   {link.label}
                 </a>
               );
@@ -113,16 +113,16 @@ export function Navbar() {
         <div className="relative flex w-[clamp(135px,10vw,158px)] shrink-0 items-center justify-center border-l border-[#d8d1c8]">
           <button
             type="button"
-            className="flex flex-col items-center gap-2 text-center"
+            className="flex flex-col items-center gap-1.5 text-center"
             aria-expanded={isProfileOpen}
             aria-haspopup="menu"
             onClick={() => setIsProfileOpen((current) => !current)}
           >
-            <span className="relative flex h-[64px] w-[64px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#35c7df] via-[#f4d0c8] to-[#7b2d64] shadow-sm">
+            <span className="relative flex h-[48px] w-[48px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#35c7df] via-[#f4d0c8] to-[#7b2d64] shadow-sm">
               <span className="absolute inset-[5px] rounded-full bg-[radial-gradient(circle_at_50%_30%,#f6d0bd_0_18%,#8d4d77_19_39%,#1b1b1b_40_55%,#38c9df_56_100%)]" />
-              <UserRound className="relative h-8 w-8 text-white/80" />
+              <UserRound className="relative h-6 w-6 text-white/80" />
             </span>
-            <span className="text-[16px] font-bold leading-none text-ink">Layla Sofia</span>
+            <span className="text-[13px] font-bold leading-none text-ink">Layla Sofia</span>
           </button>
 
           {isProfileOpen ? (
@@ -151,11 +151,11 @@ export function Navbar() {
         </div>
       </nav>
 
-      <nav className="flex h-[86px] items-center justify-between px-4 xl:hidden">
+      <nav className="flex h-[68px] items-center justify-between px-4 xl:hidden">
         <div className="flex items-center gap-3">
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-stone-200 bg-white text-ink shadow-sm hover:border-magenta hover:text-magenta"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stone-200 bg-white text-ink shadow-sm hover:border-magenta hover:text-magenta"
             aria-label={isMobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileOpen}
             onClick={() => setIsMobileOpen((current) => !current)}
@@ -178,7 +178,7 @@ export function Navbar() {
 
         <a
           href="/"
-          className="absolute left-1/2 flex h-16 w-32 -translate-x-1/2 items-center justify-center transition hover:scale-105"
+          className="absolute left-1/2 flex h-12 w-28 -translate-x-1/2 items-center justify-center transition hover:scale-105"
           aria-label="Hoor home"
         >
           <Image
@@ -194,12 +194,12 @@ export function Navbar() {
         <div className="relative flex items-center justify-end">
           <button
             type="button"
-            className="flex items-center gap-2 rounded-full border border-stone-200 bg-white py-2 pl-2 pr-3 shadow-sm hover:border-magenta hover:shadow-card"
+            className="flex items-center gap-2 rounded-full border border-stone-200 bg-white py-1.5 pl-1.5 pr-3 shadow-sm hover:border-magenta hover:shadow-card"
             aria-expanded={isProfileOpen}
             aria-haspopup="menu"
             onClick={() => setIsProfileOpen((current) => !current)}
           >
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-magenta to-peach text-white shadow-sm">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-magenta to-peach text-white shadow-sm">
               <UserRound className="h-5 w-5" />
             </span>
             <span className="hidden text-sm font-semibold text-ink md:inline">Layla Sofia</span>
