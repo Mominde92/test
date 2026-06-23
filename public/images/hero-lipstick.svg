@@ -1,0 +1,18 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="900" fill="none"/>
+  <rect x="230" y="145" width="210" height="615" rx="8" fill="#151515"/>
+  <path d="M331 365V570" stroke="#F7F1EA" stroke-width="16" stroke-linecap="round"/>
+  <path d="M288 585C318 617 355 617 385 585" stroke="#F7F1EA" stroke-width="12" stroke-linecap="round"/>
+  <text x="394" y="580" transform="rotate(-90 394 580)" fill="#F7F1EA" font-family="Arial, sans-serif" font-size="44" font-weight="700">ROUGE A LEVRES</text>
+  <path d="M557 170C620 218 633 287 598 356H504C478 292 496 222 557 170Z" fill="#9F443B"/>
+  <path d="M515 340H610V755C610 778 591 797 568 797H557C534 797 515 778 515 755V340Z" fill="url(#silver)"/>
+  <path d="M502 534H623V767C623 787 607 803 587 803H538C518 803 502 787 502 767V534Z" fill="#151515"/>
+  <rect x="655" y="515" width="145" height="292" rx="72" fill="#151515"/>
+  <defs>
+    <linearGradient id="silver" x1="515" y1="340" x2="610" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F7F7"/>
+      <stop offset="0.46" stop-color="#B8B8B8"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+</svg>

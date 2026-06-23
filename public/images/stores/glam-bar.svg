@@ -1,0 +1,13 @@
+<svg width="640" height="440" viewBox="0 0 640 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="440" fill="#FFF1E7"/>
+  <rect x="56" y="70" width="220" height="300" rx="18" fill="#F7CFC2"/>
+  <rect x="318" y="70" width="266" height="300" rx="18" fill="#FFFFFF"/>
+  <rect x="338" y="104" width="226" height="34" rx="17" fill="#C91463"/>
+  <rect x="338" y="166" width="226" height="20" rx="10" fill="#E5B8A6"/>
+  <rect x="338" y="212" width="226" height="20" rx="10" fill="#E5B8A6"/>
+  <rect x="338" y="258" width="226" height="20" rx="10" fill="#E5B8A6"/>
+  <circle cx="166" cy="180" r="76" fill="#FFFFFF"/>
+  <rect x="127" y="140" width="78" height="130" rx="18" fill="#FDBA74"/>
+  <rect x="145" y="104" width="42" height="44" rx="8" fill="#111111"/>
+  <text x="338" y="336" fill="#111" font-family="Arial" font-size="32" font-weight="700">Glam Bar</text>
+</svg>

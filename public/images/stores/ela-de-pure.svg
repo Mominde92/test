@@ -1,0 +1,11 @@
+<svg width="640" height="440" viewBox="0 0 640 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="440" fill="#EFF4EC"/>
+  <rect x="58" y="80" width="524" height="286" rx="18" fill="#FFFFFF"/>
+  <rect x="92" y="116" width="120" height="214" rx="10" fill="#8EA37E"/>
+  <rect x="244" y="116" width="296" height="38" rx="19" fill="#D2BFA7"/>
+  <rect x="244" y="184" width="296" height="38" rx="19" fill="#C91463"/>
+  <rect x="244" y="252" width="210" height="38" rx="19" fill="#FDBA74"/>
+  <circle cx="152" cy="180" r="36" fill="#F9E8DC"/>
+  <path d="M120 282c24-52 52-52 76 0" stroke="#F9E8DC" stroke-width="18" stroke-linecap="round"/>
+  <text x="244" y="336" fill="#111" font-family="Arial" font-size="30" font-weight="700">Ela De Pure</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="600" rx="48" fill="#FBF0E8"/>
+  <ellipse cx="300" cy="494" rx="145" ry="34" fill="#E2C3AB"/>
+  <rect x="220" y="210" width="160" height="240" rx="28" fill="#F6C2A4" fill-opacity="0.85"/>
+  <rect x="246" y="156" width="108" height="72" rx="20" fill="#E9A889"/>
+  <path d="M300 76L360 128L300 180L240 128L300 76Z" fill="#F7E9DE"/>
+  <rect x="252" y="304" width="96" height="72" rx="14" fill="#FFFFFF" fill-opacity="0.62"/>
+  <text x="300" y="348" text-anchor="middle" fill="#C91463" font-family="Arial, sans-serif" font-size="22" font-weight="700">MIST</text>
+</svg>

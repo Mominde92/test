@@ -1,0 +1,11 @@
+<svg width="640" height="440" viewBox="0 0 640 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="440" fill="#F6F8F3"/>
+  <rect x="48" y="68" width="544" height="304" rx="18" fill="#FFFFFF"/>
+  <rect x="84" y="110" width="118" height="90" rx="12" fill="#FDD7BF"/>
+  <rect x="228" y="110" width="118" height="90" rx="12" fill="#B7E0D4"/>
+  <rect x="372" y="110" width="118" height="90" rx="12" fill="#F6C5D9"/>
+  <rect x="84" y="236" width="406" height="32" rx="16" fill="#E4EADA"/>
+  <rect x="84" y="298" width="300" height="32" rx="16" fill="#FDBA74"/>
+  <circle cx="536" cy="280" r="42" fill="#C91463"/>
+  <text x="84" y="354" fill="#111" font-family="Arial" font-size="32" font-weight="700">Fair Glow</text>
+</svg>

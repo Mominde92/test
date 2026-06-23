@@ -1,0 +1,10 @@
+<svg width="640" height="440" viewBox="0 0 640 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="440" fill="#EAF2F7"/>
+  <rect x="44" y="58" width="552" height="324" rx="20" fill="#FFFFFF"/>
+  <rect x="76" y="94" width="120" height="252" rx="14" fill="#111111"/>
+  <rect x="228" y="94" width="120" height="252" rx="14" fill="#53B6C7"/>
+  <rect x="380" y="94" width="184" height="252" rx="14" fill="#F2D6C8"/>
+  <circle cx="472" cy="182" r="54" fill="#C91463"/>
+  <path d="M424 280h96" stroke="#111" stroke-width="16" stroke-linecap="round"/>
+  <text x="228" y="358" fill="#111" font-family="Arial" font-size="32" font-weight="700">Sephora</text>
+</svg>
