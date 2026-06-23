@@ -9,7 +9,7 @@ const footerLinks = {
 export function Footer() {
   return (
     <footer className="bg-[#fff1e4] font-footer">
-      <div className="mx-auto grid max-w-[1600px] gap-8 px-5 py-12 md:grid-cols-2 md:px-8 lg:grid-cols-[1.35fr_1fr_1fr_1.35fr_1fr] lg:py-14">
+      <div className="mx-auto grid max-w-[1450px] gap-8 px-5 py-12 md:grid-cols-2 md:px-8 lg:grid-cols-[1.35fr_1fr_1fr_1.35fr_1fr] lg:py-14">
         <div>
           <a href="/" className="block w-40" aria-label="Hoor home">
             <Image

@@ -24,7 +24,7 @@ export function FeaturedProductsSection() {
 
   return (
     <section className="bg-cream-soft px-5 py-10 md:px-8 lg:py-12">
-      <div className="mx-auto max-w-[1600px]">
+      <div className="mx-auto max-w-[1450px]">
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <div className="mb-4 inline-flex items-center gap-2">
