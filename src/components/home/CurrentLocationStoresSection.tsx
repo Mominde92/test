@@ -5,9 +5,9 @@ import { RatingStars } from "@/components/shared/RatingStars";
 
 export function CurrentLocationStoresSection() {
   return (
-    <section className="bg-cream-soft px-5 pb-12 pt-8 md:px-8 lg:pb-14">
+    <section className="bg-cream-soft px-5 pb-8 pt-5 md:px-8 lg:pb-9 lg:pt-6">
       <div className="mx-auto max-w-[1450px]">
-        <div className="mb-7">
+        <div className="mb-5">
           <h2 className="max-w-3xl font-section text-[32px] font-normal leading-tight text-ink sm:text-[36px]">
             Based on your Current Location
           </h2>

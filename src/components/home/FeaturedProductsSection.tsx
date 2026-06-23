@@ -23,11 +23,11 @@ export function FeaturedProductsSection() {
   };
 
   return (
-    <section className="bg-cream-soft px-5 py-10 md:px-8 lg:py-12">
+    <section className="bg-cream-soft px-5 py-6 md:px-8 lg:py-8">
       <div className="mx-auto max-w-[1450px]">
-        <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div className="mb-5 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <div className="mb-4 inline-flex items-center gap-2">
+            <div className="mb-2 inline-flex items-center gap-2">
               <span className="inline-flex h-5 w-5 rounded bg-peach" />
               <span className="font-label text-xl font-semibold text-peach">
                 Trending

@@ -33,11 +33,11 @@ const mapPins = [
 
 export function StoresNearYouSection() {
   return (
-    <section className="bg-cream-soft px-5 py-10 md:px-8 lg:py-12">
+    <section className="bg-cream-soft px-5 py-6 md:px-8 lg:py-8">
       <div className="mx-auto max-w-[1450px]">
-        <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div className="mb-5 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <div className="mb-3 inline-flex items-center gap-2">
+            <div className="mb-2 inline-flex items-center gap-2">
               <span className="inline-flex h-5 w-5 rounded bg-peach" />
               <span className="font-label text-xl font-semibold text-peach">
                 Nearest Stores
@@ -66,7 +66,7 @@ export function StoresNearYouSection() {
           </div>
         </div>
 
-        <div className="mb-6 grid gap-6 lg:grid-cols-[1.34fr_0.74fr]">
+        <div className="mb-4 grid gap-5 lg:grid-cols-[1.34fr_0.74fr]">
           <div className="flex min-h-12 items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-[0_12px_28px_rgba(17,17,17,0.05)] sm:h-14 sm:gap-3 sm:rounded-full sm:px-5 sm:py-0">
             <MapPin className="h-5 w-5 shrink-0 fill-[#bf3f63] text-[#bf3f63] sm:h-6 sm:w-6" />
             <p className="line-clamp-2 text-sm font-semibold text-ink sm:truncate sm:text-base">
@@ -100,7 +100,7 @@ export function StoresNearYouSection() {
           </div>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1.34fr_0.74fr]">
+        <div className="grid gap-5 lg:grid-cols-[1.34fr_0.74fr]">
           <div className="relative min-h-[430px] overflow-hidden rounded-[1.25rem] bg-[#eef1ef] shadow-[0_12px_32px_rgba(17,17,17,0.08)] sm:min-h-[570px]">
             <div className="absolute inset-0 opacity-80">
               <div className="absolute left-0 top-[12%] h-8 w-full rotate-[-12deg] bg-white/70" />
