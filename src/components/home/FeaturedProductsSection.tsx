@@ -15,9 +15,25 @@ export function FeaturedProductsSection() {
       return;
     }
 
-    const cardWidth = slider.querySelector("article")?.clientWidth ?? 320;
+    const firstSlide = slider.firstElementChild as HTMLElement | null;
+    const sliderGap = Number.parseFloat(window.getComputedStyle(slider).columnGap) || 28;
+    const step = (firstSlide?.offsetWidth ?? 320) + sliderGap;
+    const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+    const isAtStart = slider.scrollLeft <= 4;
+    const isAtEnd = slider.scrollLeft >= maxScrollLeft - 4;
+
+    if (direction === "right" && isAtEnd) {
+      slider.scrollTo({ left: 0, behavior: "smooth" });
+      return;
+    }
+
+    if (direction === "left" && isAtStart) {
+      slider.scrollTo({ left: maxScrollLeft, behavior: "smooth" });
+      return;
+    }
+
     slider.scrollBy({
-      left: direction === "left" ? -(cardWidth + 28) : cardWidth + 28,
+      left: direction === "left" ? -step : step,
       behavior: "smooth",
     });
   };
